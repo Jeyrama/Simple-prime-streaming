@@ -12,3 +12,15 @@ For example:
 
 
 // Solution
+
+function isPrime(n){ //positive integer input only
+  if (n % 2 === 0 && n !== 2) return false;
+  for (let i = 3; i <= Math.sqrt(n); i += 2) if (n % i === 0) return false;
+  return true;
+}
+
+function solve(a,b){
+  let primeString = '2';
+  for (let j = 3; primeString.length <= a + b; j += 2 ) isPrime(j) ? primeString += j : '';
+  return primeString.substr(a, b);
+}
