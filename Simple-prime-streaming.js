@@ -9,3 +9,6 @@ and your task will be to return b elements starting from index a in this sequenc
 For example:
   solve(10,5) == `19232` Because these are 5 elements from index 10 in the sequence.
 */
+
+
+// Solution
