@@ -24,3 +24,5 @@ function solve(a,b){
   for (let j = 3; primeString.length <= a + b; j += 2 ) isPrime(j) ? primeString += j : '';
   return primeString.substr(a, b);
 }
+
+// or
